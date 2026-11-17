@@ -93,8 +93,8 @@ export function Projects() {
             </h2>
           </div>
           <p className="max-w-sm text-ink/70">
-            Lazurowa 27 m² i Serock 300 m² — nasze bieżące realizacje. Obok: portfolio partnerskie
-            (szeregowiec, biały taras, oczko i nawodnienie).
+            Przykłady realizacji dla naszych 3 pakietów: Taras Start, Strefa Relaksu z pergolą oraz
+            Ogród Pod Klucz — obok bieżących projektów w Warszawie i okolicach.
           </p>
         </div>
 
@@ -110,9 +110,15 @@ export function Projects() {
               >
                 {project.featured && photos.length > 1 ? (
                   <div className="relative grid grid-cols-2 gap-1.5 sm:gap-2 md:grid-cols-4 md:gap-3">
-                    <span className="absolute top-3 left-3 z-10 max-w-[calc(100%-1.5rem)] bg-cream px-2.5 py-1.5 text-[10px] tracking-[0.14em] text-ink uppercase sm:top-4 sm:left-4 sm:px-3 sm:text-[11px] sm:tracking-[0.18em]">
-                      Lazurowa · {photos.length} zdjęć
-                    </span>
+                    {project.packageBadge ? (
+                      <span className="absolute top-3 left-3 z-10 max-w-[calc(100%-1.5rem)] bg-forest text-cream px-2.5 py-1.5 text-[10px] tracking-[0.14em] uppercase sm:top-4 sm:left-4 sm:px-3 sm:text-[11px] sm:tracking-[0.18em] shadow-sm font-medium">
+                        {project.packageBadge}
+                      </span>
+                    ) : (
+                      <span className="absolute top-3 left-3 z-10 max-w-[calc(100%-1.5rem)] bg-cream px-2.5 py-1.5 text-[10px] tracking-[0.14em] text-ink uppercase sm:top-4 sm:left-4 sm:px-3 sm:text-[11px] sm:tracking-[0.18em]">
+                        Lazurowa · {photos.length} zdjęć
+                      </span>
+                    )}
                     {photos.slice(0, 4).map((src, idx) => (
                       <div
                         key={src}
@@ -132,6 +138,11 @@ export function Projects() {
                   </div>
                 ) : (
                   <div className="relative h-[340px] overflow-hidden md:h-[420px]">
+                    {project.packageBadge ? (
+                      <span className="absolute top-3 left-3 z-10 max-w-[calc(100%-1.5rem)] bg-forest text-cream px-2.5 py-1.5 text-[10px] tracking-[0.14em] uppercase sm:top-4 sm:left-4 sm:px-3 sm:text-[11px] sm:tracking-[0.18em] shadow-sm font-medium">
+                        {project.packageBadge}
+                      </span>
+                    ) : null}
                     <img
                       src={project.image}
                       alt={project.title}
@@ -228,9 +239,16 @@ export function Projects() {
             <div className="p-6 md:p-10">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-[12px] tracking-[0.22em] text-sage uppercase">
-                    {selected.place} · {selected.year}
-                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-[12px] tracking-[0.22em] text-sage uppercase">
+                      {selected.place} · {selected.year}
+                    </p>
+                    {selected.packageBadge ? (
+                      <span className="bg-forest px-2.5 py-0.5 text-[10px] tracking-[0.16em] text-cream uppercase font-medium">
+                        {selected.packageBadge}
+                      </span>
+                    ) : null}
+                  </div>
                   <h3 id="project-title" className="mt-2 font-display text-4xl md:text-5xl">
                     {selected.title}
                   </h3>

@@ -189,6 +189,7 @@ export interface ProjectItem {
   type: string;
   area: string;
   image: string;
+  packageBadge?: string;
   gallery?: string[];
   featured?: boolean;
   photoNote?: string;
@@ -204,6 +205,130 @@ export interface ProjectItem {
 }
 
 export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'realizacja-taras-start',
+    title: 'Taras Start · 24 m² kompozyt WPC',
+    place: 'Warszawa, Ursus',
+    year: '2026',
+    type: 'Taras kompozytowy, stopień zejściowy',
+    area: '24 m²',
+    packageBadge: 'Pakiet: Taras Start (15–30 m²)',
+    image: '/images/tarasy.jpg',
+    gallery: [
+      '/images/tarasy.jpg',
+      '/images/nordic-bemowo-board.jpg',
+      '/images/nordic-bemowo-coffee.jpg',
+    ],
+    timeline: 'Realizacja: 3 dni robocze',
+    budgetNote: 'Pakiet Taras Start: podbudowa punktowa, legary aluminiowe, deska kompozytowa WPC, wykończenie krawędzi i stopień zejściowy.',
+    challenge: 'Taras deweloperski 8 m² był za mały na stół i leżaki. Inwestorzy potrzebowali powiększenia do 24 m², trwałej nawierzchni bez corocznego olejowania i bezpiecznego zejścia na trawnik.',
+    solution: 'Demontaż starych płyt, rozbudowa stabilnej podbudowy punktowej, montaż ramy aluminiowej z deską kompozytową WPC w kolorze grafitu oraz wykonanie stopnia na pełną szerokość.',
+    description:
+      'Przykład realizacji wariantu Taras Start dla domu w Warszawie (Ursus).\n\nZastąpiliśmy mały, 8-metrowy taras deweloperski przestronnym tarasem o powierzchni 24 m². Zastosowaliśmy deskę kompozytową WPC o głębokiej strukturze drewna — odporną na mróz, wilgoć i słońce, bez potrzeby corocznego szlifowania i olejowania.\n\nKonstrukcja spoczywa na punktowych fundamentach betonowych i legarach aluminiowych. Krawędzie wykończyliśmy systemowymi listwami kątowymi, a od strony trawnika zamontowaliśmy szeroki, wygodny stopień zejściowy.\n\nCzas realizacji: 3 dni robocze od wejścia na działkę do odbioru.',
+    results: [
+      'Powiększenie powierzchni z 8 m² do 24 m²',
+      'Deska kompozytowa WPC odporna na warunki atmosferyczne',
+      'Stabilna podbudowa i legary aluminiowe',
+      'Szeroki stopień zejściowy do ogrodu',
+      'Brak konieczności corocznej impregnacji',
+    ],
+    materials: [
+      'Deska kompozytowa WPC premium',
+      'Legary aluminiowe konstrukcyjne',
+      'Wsporniki i podbudowa punktowa',
+      'Listwy krawędziowe maskujące',
+      'System ukrytego montażu klipsów',
+    ],
+    process: [
+      { title: '1. Pomiar i wyznaczenie poziomów', text: 'Sprawdzenie wysokości progu drzwi tarasowych, spadków i wyznaczenie obrysu 24 m².' },
+      { title: '2. Podbudowa i legary', text: 'Przygotowanie punktów podparcia, ułożenie geowłókniny i montaż stabilnej ramy z legarów.' },
+      { title: '3. Układanie deski i stopnia', text: 'Montaż desek na niewidoczne klipsy dylatacyjne, obróbka krawędzi i budowa stopnia.' },
+    ],
+  },
+  {
+    id: 'realizacja-taras-strefa-relaksu',
+    title: 'Taras + Strefa Relaksu · 38 m² z pergolą i LED',
+    place: 'Pęcice Małe / Komorów',
+    year: '2026',
+    type: 'Taras kompozytowy, pergola, ławka, LED',
+    area: '38 m²',
+    packageBadge: 'Pakiet: Taras + Strefa Relaksu (30–50 m²)',
+    image: '/images/serock-terrace.jpg',
+    gallery: [
+      '/images/serock-terrace.jpg',
+      '/images/nordic-bemowo-lounge.jpg',
+      '/images/nordic-bemowo-detail.jpg',
+      '/images/karma-brick-2.jpg',
+    ],
+    timeline: 'Projekt 5 dni · realizacja 6 dni roboczych',
+    budgetNote: 'Pakiet Taras + Strefa: 38 m² tarasu, pergola aluminiowa 4 × 3 m, narożna ławka na wymiar, 2 donice i listwa LED.',
+    challenge: 'Duża nasłoneczniona działka (38 m² tarasu) wymagała ochrony przed upałem w południe, wydzielenia strefy jadalnej i wypoczynkowej oraz nastrojowego oświetlenia na wieczory.',
+    solution: 'Taras kompozytowy z pergolą aluminiową nad strefą jadalną. W rogu powstała zabudowana ławka z donicami na zioła i trawy ozdobne, a w krawędzi tarasu zamontowaliśmy dyskretną listwę LED 12 V.',
+    description:
+      'Realizacja odpowiadająca pakietowi B (Taras + Strefa Relaksu) w Pęcicach Małych k. Komorowa.\n\nTaras o powierzchni 38 m² podzieliliśmy na dwie funkcje: jadalną pod pergolą aluminiową 4 × 3 m oraz strefę wypoczynkową (lounge) ze zintegrowaną ławką i donicami kompozytowymi.\n\nWzdłuż krawędzi tarasu oraz pod siedziskiem wbudowaliśmy wodoodporne taśmy LED w profilach aluminiowych (światło ciepłe 3000K), sterowane pilotem i czujnikiem zmierzchu.\n\nEfekt to pełnoprawny pokój na zewnątrz, gotowy do użytkowania od wczesnej wiosny po ciepłą jesień.',
+    results: [
+      '38 m² funkcjonalnego tarasu z podziałem na strefy',
+      'Pergola aluminiowa 4 × 3 m z zadaszeniem',
+      'Wbudowane siedzisko z kompozytu + 2 donice',
+      'Oświetlenie LED w krawędzi i pod meblami (3000K)',
+      'Pełna wygoda użytkowania w dzień i w nocy',
+    ],
+    materials: [
+      'Deska kompozytowa WPC w kolorze naturalnego dębu',
+      'Pergola aluminiowa malowana proszkowo (grafit)',
+      'Wbudowane profile z listwami LED 12 V IP67',
+      'Donice kompozytowe na wymiar',
+      'Okucia i łączniki ze stali nierdzewnej',
+    ],
+    process: [
+      { title: '1. Koncepcja strefowania', text: 'Podział 38 m² na strefę stołu pod pergolą oraz strefę relaksu z narożną ławką.' },
+      { title: '2. Konstrukcja i instalacja elektryczna', text: 'Wyprowadzenie okablowania LED pod tarasem, kotwienie stóp pergoli i montaż ramy.' },
+      { title: '3. Montaż desek, pergoli i mebli', text: 'Ułożenie deski kompozytowej, montaż zadaszenia pergoli, montaż ławki i donic.' },
+      { title: '4. Oświetlenie i testy', text: 'Podłączenie sterownika zmierzchowego LED, regulacja zadaszenia i odbiór.' },
+    ],
+  },
+  {
+    id: 'realizacja-taras-ogrod-pod-klucz',
+    title: 'Taras + Ogród Pod Klucz · gres, trawnik i nawodnienie',
+    place: 'Warszawa, Wilanów',
+    year: '2026',
+    type: 'Gres na wspornikach, ogród, nawadnianie',
+    area: '35 m² taras + 140 m² ogród',
+    packageBadge: 'Pakiet: Taras + Ogród Pod Klucz',
+    image: '/images/nawierzchnie.jpg',
+    gallery: [
+      '/images/nawierzchnie.jpg',
+      '/images/karma-townhouse.jpg',
+      '/images/nordic-bemowo-plants.jpg',
+      '/images/karma-irrigation.jpg',
+    ],
+    timeline: 'Projekt 10 dni · realizacja 2,5 tygodnia',
+    budgetNote: 'Kompleksowa realizacja pod klucz: taras gresowy 2 cm na wspornikach, trawnik z rolki, nawadnianie Hunter, oświetlenie i rabaty.',
+    challenge: 'Nowy dom w Wilanowie z surową działką po budowie — gliniasta ziemia, brak tarasu, potrzeba kompleksowego ogrodu z automatycznym podlewaniem i nowoczesnym tarasem na jednym poziomie z salonem.',
+    solution: 'Jeden wykonawca od A do Z: wymiana gruntu, montaż tarasu z płyt gresowych 2 cm na regulowanych wspornikach, instalacja automatycznego nawadniania, ułożenie trawnika z rolki i posadzenie roślin z oświetleniem ogrodowym.',
+    description:
+      'Kompletna realizacja wariantu C (Taras + Ogród Pod Klucz) dla domu w Warszawie (Wilanów).\n\nInwestorzy zlecili nam całość prac w jednym kontrakcie. Wykonaliśmy taras o powierzchni 35 m² z wielkoformatowych płyt gresowych 2 cm na wspornikach regulowanych — idealnie równo z progiem okna przesuwnego HS, z bezpiecznym odprowadzeniem wody pod płytami.\n\nW ogrodzie (140 m²) rozprowadziliśmy 3-sekcyjny system automatycznego nawadniania (zraszacze wynurzalne + linia kropelkowa w rabatach), ułożyliśmy siatkę przeciw kretom i trawnik z rolki.\n\nWzdłuż ogrodzenia posadziliśmy szpaler traw ozdobnych, hortensji i zimozielonych krzewów z 10 punktami świetlnymi podświetlającymi rośliny wieczorem.',
+    results: [
+      '35 m² tarasu gresowego 2 cm w poziomie salonu',
+      '140 m² gęstego, zielonego trawnika z rolki',
+      '3-sekcyjne automatyczne nawadnianie ze sterownikiem Wi-Fi',
+      'Rabaty z hortensjami, trawami i oświetleniem punktowym',
+      'Wszystko zrealizowane przez jedną ekipę bez podwykonawców',
+    ],
+    materials: [
+      'Płyty gresowe 2 cm 60 × 60 cm na wspornikach regulowanych',
+      'Trawnik z rolki + siatka przeciw kretom',
+      'System nawadniania Hunter (zraszacze + linia kropelkowa)',
+      'Ziemia urodzajna humusowa i kora sosnowa',
+      'Reflektory ogrodowe 12 V do iluminacji zieleni',
+    ],
+    process: [
+      { title: '1. Projekt i niwelacja terenu', text: 'Projekt koncepcyjny, wyznaczenie poziomów, korytowanie i wymiana gruntu pod trawnik.' },
+      { title: '2. Montaż tarasu na wspornikach', text: 'Układanie płyt gresowych 2 cm na regulowanych stopach z drenażem wody.' },
+      { title: '3. Instalacje podziemne', text: 'Rozprowadzenie rur nawadniania, kabli oświetlenia ogrodowego i montaż zraszaczy.' },
+      { title: '4. Nasadzenia i trawnik', text: 'Sadzenie roślin, korowanie rabat, rozłożenie siatki i ułożenie trawnika z rolki.' },
+    ],
+  },
   {
     id: 'nordic-bemowo',
     title: 'Ogród wieczorny · Lazurowa',
