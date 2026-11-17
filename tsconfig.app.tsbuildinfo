@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/aboutandprojects.tsx","./src/components/contactandfooter.tsx","./src/components/header.tsx","./src/components/hero.tsx","./src/components/offersections.tsx","./src/components/pricingservicesprocess.tsx","./src/data/site.ts","./src/lib/firebase.ts"],"version":"5.9.3"}
