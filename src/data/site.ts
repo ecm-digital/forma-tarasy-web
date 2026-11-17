@@ -6,7 +6,7 @@ export const BRAND = {
   phoneHref: 'tel:+48535330323',
   phoneDigits: '48535330323',
   email: 'kontakt@formaogrody.pl',
-  city: 'Warszawa · Lazurowa, Bemowo i okolice',
+  city: 'Warszawa i okolice',
   hours: 'Pn–Pt 8:00–17:00 · sob. po umowie',
   response: 'Oddzwaniamy zwykle jeszcze tego samego dnia.',
 };
@@ -26,20 +26,19 @@ export function buildWhatsAppQuoteUrl(params: { area: string; place: string; wan
 }
 
 export const NAV_LINKS = [
-  { href: '#oferta', label: 'Oferta' },
-  { href: '#pakiet', label: 'Szeregowiec' },
+  { href: '#cennik', label: 'Oferta' },
   { href: '#wycena', label: 'Wycena' },
   { href: '#realizacje', label: 'Realizacje' },
-  { href: '#cennik', label: 'Cennik' },
+  { href: '#proces', label: 'Proces' },
   { href: '#faq', label: 'Pytania' },
   { href: '#kontakt', label: 'Kontakt' },
 ];
 
 export const HERO_STATS = [
-  { value: '20–40 m²', label: 'typowa działka szeregowca' },
-  { value: '48 h', label: 'widełki po wizycie' },
+  { value: 'Warszawa', label: 'i okolice (do 35 km)' },
+  { value: '48 h', label: 'wycena po wizycie' },
   { value: '0 zł', label: 'wizja lokalna' },
-  { value: 'Lazurowa', label: 'Bemowo i zachodnia Warszawa' },
+  { value: '1 ekipa', label: 'od pomiaru po odbiór' },
 ];
 
 export const ABOUT_STATS = [

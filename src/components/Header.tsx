@@ -10,13 +10,13 @@ function SeasonBanner() {
     <div className="bg-ink px-3 py-2 text-center text-[11px] leading-snug tracking-[0.08em] text-cream uppercase md:px-4 md:text-[12px] md:tracking-[0.12em]">
       <span className="md:hidden">
         {isPeakSeason
-          ? 'Sezon 2026 · terminy Lazurowa / Bemowo. '
+          ? 'Sezon 2026 · Warszawa i okolice. '
           : 'Projekt zimą · start wiosna 2026. '}
       </span>
       <span className="hidden md:inline">
         {isPeakSeason
-          ? 'Sezon 2026 — wolne terminy wizji na Lazurowej i Bemowie. '
-          : 'Zima to czas na projekt. Realizacja od wiosny 2026 — umówcie wizję. '}
+          ? 'Sezon 2026 — wolne terminy wizji lokalnych w Warszawie i okolicach. '
+          : 'Zima to czas na projekt. Realizacja od wiosny 2026 — umówcie wizję w Warszawie. '}
       </span>
       <a
         href="#wycena"

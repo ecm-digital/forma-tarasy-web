@@ -1,9 +1,9 @@
-import { About, LeadStrip, Projects } from './components/AboutAndProjects';
-import { Contact, ExitIntentModal, Footer, MobileStickyCta } from './components/ContactAndFooter';
+import { Projects } from './components/AboutAndProjects';
+import { Contact, Footer, MobileStickyCta } from './components/ContactAndFooter';
 import { Header } from './components/Header';
 import { Hero, StatsStrip } from './components/Hero';
-import { EstateFit, QuickQuote, StartOffer, TownhousePack } from './components/OfferSections';
-import { Faq, Pricing, Process, Services, Testimonials } from './components/PricingServicesProcess';
+import { QuickQuote } from './components/OfferSections';
+import { Faq, Pricing, Process } from './components/PricingServicesProcess';
 
 export function App() {
   return (
@@ -12,23 +12,15 @@ export function App() {
       <main>
         <Hero />
         <StatsStrip />
-        <StartOffer />
-        <TownhousePack />
-        <EstateFit />
-        <QuickQuote />
-        <About />
-        <Projects />
-        <LeadStrip />
         <Pricing />
-        <Services />
+        <QuickQuote />
+        <Projects />
         <Process />
-        <Testimonials />
         <Faq />
         <Contact />
       </main>
       <Footer />
       <MobileStickyCta />
-      <ExitIntentModal />
     </>
   );
 }

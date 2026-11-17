@@ -14,14 +14,15 @@ export function Pricing() {
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
-            <p className="text-[12px] tracking-[0.28em] text-sage uppercase">Widełki orientacyjne</p>
+            <p className="text-[12px] tracking-[0.28em] text-sage uppercase">Oferta · Warszawa i okolice</p>
             <h2 className="mt-4 font-display text-4xl leading-tight md:text-6xl">
-              Orientacyjne ceny — potem dokładna wycena.
+              Trzy pakiety — wycena po wizji lokalnej.
             </h2>
           </div>
           <p className="max-w-sm text-ink/70">
-            Najczęściej robimy małe ogrody szeregowców przy Lazurowej i na Bemowie. Po wizycie
-            dostajecie kwotę pod Waszą działkę — nie katalog.
+            Działamy w całej Warszawie i okolicach (Bemowo, Ursus, Mokotów, Wilanów, Ursynów,
+            Białołęka, Piaseczno, Pruszków, Łomianki, Ząbki). Po pomiarze dostajecie dokładny
+            kosztorys pod Waszą działkę.
           </p>
         </div>
 

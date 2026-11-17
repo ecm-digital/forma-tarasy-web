@@ -14,18 +14,18 @@ export function Hero() {
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pt-28 pb-28 sm:px-5 md:px-8 md:pt-40 md:pb-20">
         <p className="reveal text-[11px] tracking-[0.22em] text-cream/85 uppercase sm:text-[12px] sm:tracking-[0.32em]">
-          Tarasy i ogrody · Lazurowa · Bemowo · Warszawa
+          Tarasy i ogrody · Warszawa i okolice
         </p>
         <h1 className="reveal mt-4 max-w-4xl font-display text-[clamp(2.75rem,12vw,7rem)] leading-[0.9] font-medium tracking-tight text-cream drop-shadow-[0_8px_32px_rgba(0,0,0,0.45)] sm:mt-5">
-          Mały ogród
+          Tarasy i ogrody
           <br />
-          <em className="italic">duży efekt</em>
+          <em className="italic">na lata</em>
         </h1>
 
         <div className="reveal mt-6 max-w-lg space-y-6 md:mt-10 md:space-y-8">
           <p className="text-[15px] leading-relaxed text-cream/90 md:text-lg">
-            Specjalizujemy się w ogrodach szeregowców 20–40 m² na Lazurowej i zachodniej Warszawie — ze
-            strefami, nawodnieniem i układem, z którego korzystacie na co dzień.
+            Projektujemy i budujemy tarasy (kompozyt, drewno, gres) oraz ogrody w Warszawie i
+            okolicach — z bezpłatną wizją lokalną i wyceną w 48 godzin.
           </p>
           <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:gap-3">
             <a
@@ -37,11 +37,11 @@ export function Hero() {
             </a>
             <div className="grid grid-cols-2 gap-2.5 sm:contents">
               <a
-                href="#pakiet"
+                href="#cennik"
                 className="border border-cream/80 px-4 py-3.5 text-center text-[12px] tracking-[0.12em] uppercase transition hover:bg-cream hover:text-ink sm:px-5 sm:text-[13px] sm:tracking-[0.16em]"
                 onClick={() => trackEvent('click_cta', { place: 'hero', action: 'pack' })}
               >
-                Pakiet 20–40 m²
+                Oferta i pakiety
               </a>
               <a
                 href="#realizacje"
