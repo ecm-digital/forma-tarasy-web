@@ -37,7 +37,7 @@ export function Pricing() {
               <div>
                 {tier.hot ? (
                   <p className="text-[11px] tracking-[0.2em] text-brass uppercase">
-                    Najczęściej wybierany · 2026
+                    Najczęściej wybierany · Sezon 2027
                   </p>
                 ) : null}
                 <h3 className={`font-display text-3xl ${tier.hot ? 'mt-2' : ''}`}>{tier.name}</h3>
@@ -79,7 +79,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-sm text-ink/50">
-          * Orientacyjnie dla Warszawy 2026. Ostateczna cena po wizji lokalnej · {BRAND.phone} ·{' '}
+          * Orientacyjnie dla Warszawy (sezon 2027). Ostateczna cena po wizji lokalnej · {BRAND.phone} ·{' '}
           <a
             href={WHATSAPP_DEFAULT}
             target="_blank"

@@ -7,25 +7,27 @@ const isPeakSeason = month >= 2 && month <= 9;
 
 function SeasonBanner() {
   return (
-    <div className="bg-ink px-3 py-2 text-center text-[11px] leading-snug tracking-[0.08em] text-cream uppercase md:px-4 md:text-[12px] md:tracking-[0.12em]">
-      <span className="md:hidden">
-        {isPeakSeason
-          ? 'Sezon 2026 · Warszawa i okolice. '
-          : 'Projekt zimą · start wiosna 2026. '}
-      </span>
-      <span className="hidden md:inline">
-        {isPeakSeason
-          ? 'Sezon 2026 — wolne terminy wizji lokalnych w Warszawie i okolicach. '
-          : 'Zima to czas na projekt. Realizacja od wiosny 2026 — umówcie wizję w Warszawie. '}
-      </span>
-      <a
-        href="#wycena"
-        className="underline decoration-brass underline-offset-4"
-        onClick={() => trackEvent('click_season_banner', { season: isPeakSeason ? 'peak' : 'winter' })}
-      >
-        Szybka wycena
-      </a>
-    </div>
+    <aside
+      aria-label="Informacja o sezonie i terminach"
+      className="border-b border-cream/15 bg-forest px-4 py-2.5 text-center text-[12px] font-medium tracking-[0.08em] text-cream uppercase sm:px-6 sm:py-3 sm:text-[13px] sm:tracking-[0.1em] md:text-[14px]"
+    >
+      <div className="mx-auto flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+        <span className="inline-block h-2 w-2 rounded-full bg-brass" />
+        <span className="md:hidden">
+          Projekt zimą · start wiosna 2027.{' '}
+        </span>
+        <span className="hidden md:inline">
+          Zima to idealny czas na projekt. Start realizacji: wiosna 2027 — zarezerwujcie termin wizji w Warszawie.{' '}
+        </span>
+        <a
+          href="#wycena"
+          className="ml-1 inline-flex items-center gap-1 font-semibold text-brass underline decoration-brass underline-offset-4 transition hover:text-cream"
+          onClick={() => trackEvent('click_season_banner', { season: 'winter_2027' })}
+        >
+          Szybka wycena &rarr;
+        </a>
+      </div>
+    </aside>
   );
 }
 
